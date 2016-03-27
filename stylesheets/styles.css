@@ -10072,6 +10072,8 @@ header {
   height: 50px;
   line-height: 50px;
   vertical-align: middle;
+  border-radius: 5px;
+  overflow: hidden;
 }
 header a.button {
   -moz-box-shadow: inset 0px 0px 0px 0px #bbdaf7;
@@ -10106,6 +10108,7 @@ header a.button {
   text-decoration: none;
   text-align: center;
   text-shadow: 1px -1px 2px #528ecc;
+  border: 1px solid #bababa;
   /* This button was generated using CSSButtonGenerator.com */
   vertical-align: middle;
 }
@@ -10126,6 +10129,33 @@ header a.button span {
 header a.button.icon {
   font-size: 28px;
   line-height: 33px;
+}
+header .search-form {
+  position: relative;
+  display: inline-block;
+  padding: 6px 10px;
+  line-height: 1;
+  border-radius: 18px;
+  background-color: #fff;
+  border: 1px solid #bababa;
+}
+header .search-form input {
+  border: none;
+  color: #bababa;
+  line-height: 1;
+  display: inline-block;
+  background: none;
+  margin-left: 10px;
+}
+header .search-form button {
+  color: #bababa;
+}
+header button.btn-search {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
 
 a.logo {

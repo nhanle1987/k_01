@@ -18,40 +18,69 @@
 // @import "sprites/*.png";
 
 header {
-    // Needs latest Compass, add '@import "compass"' to your scss
-    // Permalink - use to edit and share this gradient:
-    // http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16
-    background-color: #87e0fd; // Old browsers
-    @include filter-gradient(#87e0fd, #05abe0, vertical); // IE6-9
-    @include background-image((url(../images/pattern.png), linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%)));
-    background-position: 0 0, 0 0;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
+	// Needs latest Compass, add '@import "compass"' to your scss
+	// Permalink - use to edit and share this gradient:
+	// http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16
+	background-color: #87e0fd; // Old browsers
+	@include filter-gradient(#87e0fd, #05abe0, vertical); // IE6-9
+	@include background-image((url(../images/pattern.png), linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%)));
+	background-position: 0 0, 0 0;
+	background-repeat: repeat, repeat;
+	background-size: auto, auto;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	border-radius: 5px;
+	overflow: hidden;
 
-    a.button {
-        @include gradient-button();
-        vertical-align: middle;
-        span {
-            display: inline-block;
-            padding: 9px 0;
-        }
-        &.icon {
-            font-size: 28px;
-            line-height: 33px;
-        }
-    }
+	a.button {
+		@include gradient-button();
+		vertical-align: middle;
+		span {
+			display: inline-block;
+			padding: 9px 0;
+		}
+		&.icon {
+			font-size: 28px;
+			line-height: 33px;
+		}
+	}
+	.search-form {
+		position: relative;
+		display: inline-block;
+		padding: 6px 10px;
+		line-height: 1;
+		border-radius: 18px;
+		background-color: #fff;
+		border: 1px solid #bababa;
+		input {
+			border: none;
+			color: #bababa;
+			line-height: 1;
+			display: inline-block;
+			background: none;
+			margin-left: 10px;
+		}
+		button {
+			color: #bababa;
+		}
+	}
+	button.btn-search {
+		border: none;
+		background: none;
+		position: absolute;
+		top:6px;
+		left: 0;
+	}
 }
 
 a.logo {
-    @include text-shadow(0 0 2px true #3F4D52);
-    font-weight: bold;
-    font-size: 32px;
-    color: #fff;
-    display: inline-block;
-    &:hover {
-        text-decoration: none;
-    }
+	@include text-shadow(0 0 2px true #3F4D52);
+	font-weight: bold;
+	font-size: 32px;
+	color: #fff;
+	display: inline-block;
+	&:hover {
+		text-decoration: none;
+	}
 }
